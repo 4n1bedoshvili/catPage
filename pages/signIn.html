@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-</head>
-<body background="../images/bg.jpg">
-    <header style="text-align: center; color: rgb(0, 0, 0);"><h1>Sign In</h1></header>
-    <main>
-        <div>
-            <form action="/index.html" method="get">
-                <fieldset style="width: 200px; "><legend>UserName</legend></fieldset>
-            </form>
+    <link rel="icon" href="../images/icon.svg" />
+  </head>
+  <body background="../images/bg.jpg">
+    <header>
+      <main>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <form action="/index.html" method="get" style="text-align: center">
+            <fieldset
+              style="border: 2px double; border-radius: 20px; width: 300px"
+            >
+              <legend style="font-size: 25px">Sign In</legend>
+              <label for="username"></label><br />
+              <input
+                type="text"
+                name="username"
+                id="username0"
+                placeholder="Username"
+                style="
+                  font-size: larger;
+                  padding-left: 10px;
+                  background-color: unset;
+                  width: 300px;
+                  height: 40px;
+                  border: 2px solid;
+                  border-radius: 30px;
+                "
+              /><br />
+              <label for="password"></label> <br />
+              <input
+                type="password"
+                placeholder="Password"
+                style="
+                  background-color: unset;
+                  width: 300px;
+                  font-size: larger;
+                  padding-left: 10px;
+                  height: 40px;
+                  border-radius: 30px;
+                  border: 2px solid;
+                "
+              /><br />
+              <button
+                type="submit"
+                style="
+                  margin: 20px;
+                  width: 200px;
+                  height: 40px;
+                  border: unset;
+                  border-radius: 20px;
+                  background-color: antiquewhite;
+                  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.55);
+                "
+              >
+                SIGN IN
+              </button>
+            </fieldset>
+            <h4><a href="../index.html">Forgot Password?</a></h4>
+            <h5>
+              Go back <a href="../index.html" style="color: black">HOME</a>
+            </h5>
+          </form>
         </div>
-    </main>
-</body>
+      </main>
+    </header>
+  </body>
 </html>
